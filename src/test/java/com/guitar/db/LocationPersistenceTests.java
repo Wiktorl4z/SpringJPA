@@ -80,6 +80,12 @@ public class LocationPersistenceTests {
 	}
 
 	@Test
+	public void testFindWithNotLike() throws Exception {
+		List<Location> locs = locationJpaRepository.findByStateNotLike("New%");
+		assertEquals(46, locs.size());
+	}
+
+	@Test
 	@Transactional  //note this is needed because we will get a lazy load exception unless we are in a tx
 	public void testFindWithChildren() throws Exception {
 		Location arizona = locationJpaRepository.findOne(3L);
