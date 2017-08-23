@@ -66,6 +66,7 @@ INSERT INTO modeltype (id, name) VALUES (4, 'Electric');
 INSERT INTO modeltype (id, name) VALUES (5, 'Hollow Body Electric');
 INSERT INTO modeltype (id, name) VALUES (6, 'Semi-Hollow Body Electric');
 INSERT INTO modeltype (id, name) VALUES (7, 'Bass');
+INSERT INTO modeltype (id, name) VALUES (8, NULL);
 
 
 INSERT INTO model (id, name, manufacturer_id, modeltype_id, price, woodtype, yearfirstmade, frets)
